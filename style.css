@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: lightblue;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar .list-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navbar .list-button:hover {
+    background-color: lightgreen;
+}
+
+.hero-section {
+    background-color: gray;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}

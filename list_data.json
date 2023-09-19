@@ -1,0 +1,64 @@
+{
+	"movies": [
+		{
+			"Title": "Inception",
+			"Director": "Christopher Nolan",
+			"Rating": "PG-13",
+			"Year": "2010"
+		},
+		{
+			"Title": "The Shawshank Redemption",
+			"Director": "Frank Darabont",
+			"Rating": "R",
+			"Year": "1994"
+		},
+		{
+			"Title": "The Godfather",
+			"Director": "Francis Ford Coppola",
+			"Rating": "R",
+			"Year": "1972"
+		},
+		{
+			"Title": "The Matrix",
+			"Director": "Lana Wachowski, Lilly Wachowski",
+			"Rating": "R",
+			"Year": "1999"
+		},
+		{
+			"Title": "Forrest Gump",
+			"Director": "Robert Zemeckis",
+			"Rating": "PG-13",
+			"Year": "1994"
+		},
+		{
+			"Title": "The Lion King",
+			"Director": "Roger Allers, Rob Minkoff",
+			"Rating": "G",
+			"Year": "1994"
+		},
+		{
+			"Title": "Schindler's List",
+			"Director": "Steven Spielberg",
+			"Rating": "R",
+			"Year": "1993"
+		},
+		{
+			"Title": "Fight Club",
+			"Director": "David Fincher",
+			"Rating": "R",
+			"Year": "1999"
+		},
+		{
+			"Title": "Pulp Fiction",
+			"Director": "Quentin Tarantino",
+			"Rating": "R",
+			"Year": "1994"
+		},
+		{
+			"Title": "The Lord of the Rings: The Return of the King",
+			"Director": "Peter Jackson",
+			"Rating": "PG-13",
+			"Year": "2003"
+		}
+	]
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>  
+<html lang="en">  
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Amer | Movies</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>  
+        <header class="navbar">
+            <button class="list-button" onclick="window.location.href='index.html'">Back</button>
+        </header>
+        
+        <section class="hero-section">
+            <h1>My Movies</h1>
+            <div id="showDataJSON"></div>
+        </section>
+
+        <script>
+            fetch('list_data.json')
+                .then(response => response.json())
+                .then(data => {
+
+                    // Create the base table
+                    var jsonTable = document.createElement("table");
+                    var tr = jsonTable.insertRow(-1);   
+                    jsonTable.style.width = "75%";
+
+                    // Select the headers for the table
+                    let headers = Object.keys(data.movies[0]);
+                    headers.forEach(header => {
+                        var th = document.createElement("th");      
+                        th.innerHTML = header;
+                        tr.appendChild(th);
+                    });
+
+                    // Add the data into each row of the list
+                    data.movies.forEach(movie => {
+                        tr = jsonTable.insertRow(-1);
+                        headers.forEach(header => {
+                            var tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = movie[header];
+                        });
+                    });
+
+                    // Add the table to the HTML
+                    var divContainer = document.getElementById("showDataJSON");
+                    divContainer.innerHTML = "";
+                    divContainer.appendChild(jsonTable);
+                });
+        </script>  
+    </body>
+</html>
